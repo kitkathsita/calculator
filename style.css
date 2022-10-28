@@ -1,0 +1,80 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Patrick Hand', cursive;
+  background-color: rgb(245, 210, 237);
+}
+
+header {
+  font-size: 8vh;
+  text-align: center;
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 55vh;
+  width: 35vh;
+  border: 0.2vh solid;
+  border-radius: 20% / 12%;
+  padding: 3.06vh 2.04vh;
+  background-color: rgb(234, 188, 251);
+  gap: 1vh;
+}
+
+.screen {
+  display: flex;
+  border: 0.2vh solid;
+  border-radius: 10% / 30%;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  height: 12vh;
+  width: 35vh;
+  margin-bottom: 1.5vh;
+  background-color: rgb(215, 215, 215);
+}
+
+button {
+  height: 7vh;
+  width: 7vh;
+  border: 0.2vh solid;
+  border-radius: 50%;
+  font-size: 4vh;
+  font-family: 'Amatic SC', cursive;
+  background-color: rgb(229, 158, 255);
+  cursor: pointer;
+  box-shadow: 0 3px #999;
+}
+
+button:active {
+  box-shadow: 0 1px #666;
+  transform: translateY(2px);
+}
+
+.contain {
+  display: flex;
+  gap: 2vh;
+}
+
+.turn {
+  width: 16vh;
+  border-radius: 20% / 40%;
+  font-size: 3vh;
+}
+ .ac {
+  font-size: 3vh;
+ }
+
+ .del {
+  font-size: 3vh;
+ }
+
+ .ope {
+  font-size: 5vh;
+ }
