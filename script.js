@@ -1,3 +1,6 @@
+const onOff = document.querySelector('.turn')
+const screen = document.querySelector('.screen')
+
 function adition(a, b) {
   return a + b
 }
@@ -32,4 +35,13 @@ function operate(opp, a, b) {
   return total
 }
 
+function initialCalc() {
+  var textInit = document.createElement('p')
+  screen.appendChild(textInit)
+  textInit.innerHTML = 'HELLO'
+  textInit.classList.add('animation')
+}
+
 console.log(operate('div', 5, 5))
+
+onOff.addEventListener('click', initialCalc)

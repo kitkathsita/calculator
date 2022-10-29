@@ -31,13 +31,14 @@ header {
   display: flex;
   border: 0.2vh solid;
   border-radius: 10% / 30%;
-  justify-content: center;
-  text-align: center;
+  justify-content: right;
+  text-align: right;
   align-items: center;
   height: 12vh;
   width: 35vh;
   margin-bottom: 1.5vh;
   background-color: rgb(215, 215, 215);
+  overflow: hidden;
 }
 
 button {
@@ -78,3 +79,30 @@ button:active {
  .ope {
   font-size: 5vh;
  }
+
+ .animation {
+  font-size: 12vh;
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  
+  -moz-animation: my-animation 3s linear;
+  -webkit-animation: my-animation 3s linear;
+  animation: my-animation 3s linear;
+ }
+
+ @keyframes weeee {
+100% { transform: translateX(101%); color: purple; }
+}
+
+@keyframes my-animation {
+  from {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  to {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
