@@ -1,3 +1,23 @@
+@font-face {
+  font-family: 'Digital-7';
+  src: url('fonts/Digital7-1e1Z.eot');
+  src: url('fonts/Digital7-1e1Z.eot?#iefix') format('embedded-opentype'),
+       url('fonts/Digital7-1e1Z.woff2') format('woff2'),
+       url('fonts/Digital7-1e1Z.woff') format('woff'),
+       url('fonts/Digital7-1e1Z.ttf')  format('truetype'),
+       url('fonts/Digital7-1e1Z.svg#Digital-7') format('svg');
+}
+
+@font-face {
+  font-family: 'Technology';
+  src: url('fonts/technologybold.eot');
+  src: url('fonts/technologybold.eot?#iefix') format('embedded-opentype'),
+       url('fonts/technologybold.woff2') format('woff2'),
+       url('fonts/technologybold.woff') format('woff'),
+       url('fonts/technologybold.ttf')  format('truetype'),
+       url('fonts/technologybold.svg#Technology') format('svg');
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -81,7 +101,10 @@ button:active {
  }
 
  .animation {
+  display: flex;
   font-size: 12vh;
+  font-family: 'Digital-7';
+  align-items: center;
   -moz-transform: translateX(100%);
   -webkit-transform: translateX(100%);
   transform: translateX(100%);
@@ -89,6 +112,17 @@ button:active {
   -moz-animation: my-animation 3s linear;
   -webkit-animation: my-animation 3s linear;
   animation: my-animation 3s linear;
+  position: relative;
+  top: -10%;
+ }
+
+ .styleText {
+  display: flex;
+  font-size: 8vh;
+  font-family: 'Amatic SC';
+  align-items: center;
+  position: relative;
+  padding: 0vh 0.5vh;
  }
 
  @keyframes weeee {
